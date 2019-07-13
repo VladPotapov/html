@@ -1,0 +1,20 @@
+div {
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: yellow;
+}
+
+.radius1 {
+    border-radius: 25px 50px 25px 85px;
+}
+.radius2 {
+    border-top-left-radius: 150px 30px;
+    border-top-right-radius: 150px 30px;
+}
+.radius3 {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+	<!-- атрибут novalidate в теге form отключает проверку формы -->
+	<form action="">
+		<!-- логический раздел формы -->
+		<fieldset>
+			<!--название раздела-->
+			<legend>Контактная информормация</legend>
+			<label for="name">Имя<em>*</em></label>
+			<input type="text" id="name" placeholder="Ivan" autofocus required><br>
+			<label for="tel">Телефон<em>*</em></label>
+			<input type="text" id="tel" placeholder="x (xxx) xxx xxxx" required="укажите телефон"><br>
+			<label for="email">E-mail<em>*</em></label>
+			<input type="text" id="email" required><br>
+		</fieldset>
+		<!-- атрибут formnovalidate выполняет ту же функцию
+			что и novalidate но в теге input-->
+		<input type="submit">
+	</form>
+</body>
+</html>

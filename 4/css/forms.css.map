@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACV,MAAM,EAAE,eAAe;;AAExB,oBAAoB;EACnB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;;AAEnB,sBAAsB;EACrB,UAAU,EAAE,WAAW",
+"sources": ["style.sass"],
+"names": [],
+"file": "forms.css"
+}

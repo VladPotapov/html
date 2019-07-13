@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: white;
+	background: black;
+	h1 {
+		font-family: 'Rubik One', sans-serif;
+		font-size: 50px;
+		text-transform: uppercase;
+		background: linear-gradient(5deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #0B2349;
+		display: table;
+		margin: 20px auto;
+	}
+}

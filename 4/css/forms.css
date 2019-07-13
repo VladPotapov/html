@@ -1,0 +1,11 @@
+input:focus {
+  border: 2px solid green; }
+
+input:required:valid {
+  color: green;
+  background: yellow; }
+
+input:required:invalid {
+  background: lightyellow; }
+
+/*# sourceMappingURL=forms.css.map */
