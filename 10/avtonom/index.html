@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            applicationCache.onupdateready = function() {
+                if(confirm("Обновить приложение?")) {
+                    window.location.reload();
+                }
+            }
+        }
+    </script>
+    <script src="online.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Работа над автономным приложением (manifest)</h1>
+    <div id="displayStatus"></div>
+    <h1>Работа над автономным приложением (manifest) online</h1>
     <p>Это автономное приложение работающее без подключения к сети</p>
+    <p><a href="vk.html">click me</a></p>
+    <img src="file.png" alt="">
+    <script src="script.js"></script>
 </body>
 </html>

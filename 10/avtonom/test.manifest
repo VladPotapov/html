@@ -1,6 +1,32 @@
+#vesion 1.00.19
+
 CACHE MANIFEST
 
-#vesion 1.00.002
+#update files
+
 #pages
 index.html
+
+#style
 style.css
+
+#script
+script.js
+
+#file
+file.png
+
+#zamenit na file esli net interneta
+FALLBACK:
+index.html off index_offline.html
+script.js off script_offline.js
+/ error.html
+
+NETWORK:
+index.html
+index_offline.html
+error.html
+
+style.css
+
+file.png

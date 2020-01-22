@@ -1,0 +1,1 @@
+alert("none internet");
