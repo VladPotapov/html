@@ -1,9 +1,18 @@
-*
+body
 	margin: 0
 	padding: 0
+	
+.container
+	display: grid
+	grid-template-columns: 20px 50px auto 50px 40px
+	grid-template-rows: 25% 100px 50px 10px
+	height: 100vh
 
-body 
-	font-family: Arial
-
-header
-	width: 100%
+.item
+	background-color: red
+	&-1
+		background-color: green
+	&-2
+		background-color: #fff
+	&-3
+		background-color: #000000
