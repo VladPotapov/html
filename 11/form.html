@@ -6,10 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="t1.php">
-        <input type="text" name="one">
-        <input type="text" name="tue">
-        <input type="submit" value="GO">
-    </form>
+    <script>
+        var req = new XMLHttpRequest();
+
+        function askServer() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var dataToSend = "?number1=" + number1 +"&number2=" + number2;
+            req.open("GET", "get.php" + dataToSend, true);
+            req.onreadystatechange = handleServerResponse;
+            req.send();
+            document.getElementById("result").innerHTML = "The request has been sent";
+        }
+
+        function handleServerResponse() {
+            if(req.readyState == 4) && (req.status == 200)
+        }
+    </script>
+    <div>
+        <p>Введите 2 числа: <br>
+            <input type="number" id="number1"><br>
+            <input type="number" id="number2"><br>
+        </p>
+        <p><button onclick="askServer()">запрос на сервер</button></p>
+    </div>
+    <p id="result"></p>
 </body>
 </html>
