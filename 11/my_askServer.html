@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask The Server</title>
+    <style>
+        body {
+            font-family: Verdana;
+            font-size: 12px;
+        }
+        div {
+            margin: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #fbf3cb;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Enter two numbers:
+            <input type="number" id="number1">
+            <input type="number" id="number2">
+        </p>
+        <p>
+            To ask the server to add them, without refreshing the page, click
+            this button:
+            <button onclick="askServer()">Ask the Server</button>
+        </p>
+    </div>
+</body>
+</html>

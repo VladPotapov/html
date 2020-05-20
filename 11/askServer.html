@@ -46,8 +46,7 @@ function askServer() {
 function handleServerResponse() {
   if ((req.readyState == 4) && (req.status == 200))
  {
-    var result = 
-req.responseText;
+    var result = req.responseText;
     document.getElementById("result").innerHTML = "The answer is: " + result;
   }
 }
