@@ -35,11 +35,11 @@ function askServer() {
   var number2 = document.getElementById("number2").value;
 
   var dataToSend = "?number1=" + number1 + "&number2=" + number2;
-  req.open("GET", "WebCalculator.php" + dataToSend, true);
+  req.open("GET", "calculator.php" + dataToSend, true);
   req.onreadystatechange = handleServerResponse;
   req.send();
 
-  document.getElementById("result").innerHTML = "The request has been sent.";
+  document.getElementById("result").innerHTML = "Запрос был отправлен.";
 }
 
 

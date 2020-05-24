@@ -15,7 +15,34 @@
             padding: 10px;
             background-color: #fbf3cb;
         }
+        input {
+            width: 75px;
+        }
+        #result {
+            color: darkred;
+            font-weight: bold;
+        }
     </style>
+    <script>
+        var req = new XMLHttpRequest();
+        
+        function askServer() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var dataToSend = "?number1=" + number1 + "&number2=" + number2;
+            req.open("GET", "calculator.php" + dataToSend, true);
+            req.onreadystatechange = handleServerResponse;
+            req.send();
+            document.getElementById("result").innerHTML = "Запрос был отправлен";
+        }
+
+        function handleServerResponse() {
+            if((req.readyState == 4) && (req.status == 200)) {
+                var result = req.responseText;
+                document.getElementById("result").innerHTML = "Ответ: " + result;
+            }
+        }
+    </script>
 </head>
 <body>
     <div>
@@ -29,5 +56,6 @@
             <button onclick="askServer()">Ask the Server</button>
         </p>
     </div>
+    <p id="result"></p>
 </body>
 </html>
