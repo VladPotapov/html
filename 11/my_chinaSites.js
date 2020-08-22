@@ -8,7 +8,8 @@ window.onload = function () {
 function nextSlide() {
     if (slideNumber == 5) {
         slideNumber = 1;
-    } else {
+    }
+    else {
         slideNumber += 1;
     }
 
@@ -18,19 +19,20 @@ function nextSlide() {
 
 function goToNewSlide() {
     if (req != null) {
-        req.open("GET", "ChinaSites" + slideNumber + "_slide" + ".html", true);
+        req.open("GET", "my_chinaSites" + slideNumber + "_slide" + ".html", true);
         req.onreadystatechange = newSlideReceived;
         req.send();
     }
     else {
-        // There was a problem. Ignore it.
+        console.log("problems");
     }
 }
 
 function previousSlide() {
     if (slideNumber == 1) {
-        slideNumber = 5;
-    } else {
+        slideNumber = 1;
+    }
+    else {
         slideNumber -= 1;
     }
 
